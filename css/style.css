@@ -8,8 +8,8 @@
 	scroll-behavior: smooth;
 }
 :root{
-	--bg-color: #ffffff;
-	--text-color: #000;
+	--bg-color: #000000;
+	--text-color: #ffffff;
 	--secound-color: #a09dab;
 	--main-color: #f75023;
 	--big-font: 5rem;
@@ -46,7 +46,7 @@ header{
 }
 .navlist a{
 	font-size: var(--p-font);
-	color: var(--text-color);
+	color: var(--secound-color);
 	font-weight: 500;
 	padding: 10px 27px;
 }
@@ -76,11 +76,12 @@ header{
 	background: transparent;
 	border: 2px solid var(--main-color);
 	border-radius: 30px;
-	color: var(--text-color);
+	color: var(--main-color);
 	letter-spacing: 1px;
 	font-size: var(--p-font);
 	font-weight: 500;
 	transition: ease .50s;
+	margin-right: 10px;
 }
 .top-btn:hover{
 	transform: scale(1.1);
@@ -96,7 +97,7 @@ section{
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
-	background: url(../img/background.jpg);
+	background: var(--bg-color);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -108,6 +109,7 @@ section{
 .home-text h1{
 	margin: 10px 0px 25px;
 	font-size: var(--big-font);
+	color: var(--tex-color);
 	line-height: 1;
 	font-weight: 500;
 }
@@ -115,6 +117,7 @@ section{
 	margin-bottom: 23px;
 	font-size: 19px;
 	font-weight: 500;
+	color: var(--secound-color);
 }
 span{
 	color: var(--main-color);
@@ -158,6 +161,7 @@ span{
 	line-height: 24px;
 	border-radius: 30px;
 	transition: ease .40s;
+	margin-left: 10px;
 }
 .btn:hover{
 	transform: scale(1.1);
@@ -168,9 +172,9 @@ span{
 	height: auto;
 }
 header.sticky{
-	background: var(--bg-color);
+	background: var(--text-color);
 	padding: 13px 18%;
-	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+	box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .items{
